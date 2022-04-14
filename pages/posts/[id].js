@@ -1,8 +1,8 @@
-import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/post'
+import Layout from '@/components/layout'
+import { getAllPostIds, getPostData } from '@/lib/post'
 import Head from 'next/head'
-import Date from '../../components/date'
-import utilStyles from '../../styles/utils.module.css'
+import Date from '@/components/date'
+import utilStyles from '@/styles/utils.module.css'
 
 export default function Post({ postData }) {
     return (<Layout>
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
     const paths = getAllPostIds()
     return {
         paths,
-        fallback: false
+        fallback: 'blocking'
     }
 }
 
