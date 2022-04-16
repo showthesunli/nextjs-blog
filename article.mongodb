@@ -1,0 +1,2 @@
+use('liuli')
+db.stats(1024*1024);

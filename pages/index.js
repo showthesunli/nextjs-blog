@@ -21,14 +21,14 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>A Simple Man</p>
+        <h2>一个简单的人</h2>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          这是一个简单的网站，你可以使用我们的
+          <a href="https://nextjs.org/learn">Next.js教程</a>来构建一个这样的网站.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>文章</h2>
         <ul className={utilStyles.list}>
           {
             allPostsData.map(({id, date, title})=>(
