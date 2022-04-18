@@ -1,3 +1,7 @@
-export default function handler(req, res){
-    res.status(200).json({ text: 'hello'})
+import {run} from '@/lib/db-manager/manager.js'
+
+export default async function handler(req, res){
+    const aritcle = await run()
+    res.status(200).send(aritcle)
+    // res.status(200).json({ text: 'hello'})
 }
