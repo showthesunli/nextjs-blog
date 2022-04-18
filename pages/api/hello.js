@@ -1,4 +1,4 @@
-import {run} from '@/lib/db-manager/manager.js'
+import {run} from '@/lib/db-manager/repository/db_tools.js'
 
 export default async function handler(req, res){
     const aritcle = await run()
