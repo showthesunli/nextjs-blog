@@ -1,7 +1,10 @@
-import Button from '@mui/material/Button';
+import Contaniner from "@mui/material/Container"
+import Box from "@mui/material/Box"
 
-export default function Mui() {
+export default function Layout(){
     return (
-            <Button>Save</Button>
+        <Contaniner maxWidth="lg">
+            <Box sx={{ bgcolor:"primary.dark", height:"100px"}}></Box>
+        </Contaniner>
     )
 }
