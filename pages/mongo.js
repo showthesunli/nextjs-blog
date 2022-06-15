@@ -33,13 +33,13 @@ export default function Home({ allPostsData }) {
           {
             allPostsData.map(({doc_id, doc_date, doc_name})=>(
               
-              <li className={utilStyles.listItem} key={id}>
+              <li className={utilStyles.listItem} key={doc_id}>
                 <Link href={`/posts/${doc_id}`}>
                   <a>{doc_name}</a>
                 </Link>
                 <br/>
                 <small className={utilStyles.lightText}>
-                  <Date dateString={doc_date}/>
+                  {doc_date/* <Date dateString={doc_date}/> */}
                 </small>
               </li>
               ))
